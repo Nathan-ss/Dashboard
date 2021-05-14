@@ -66,6 +66,7 @@
 .btn:hover {
     background: transparent;
     text-decoration: none;
+    color: #000000;
   }
 body{
     display: flex;
