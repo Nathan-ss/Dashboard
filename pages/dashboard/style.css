@@ -13,7 +13,7 @@ a {
 a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
-
+@media screen and (min-width: 1024px) {
 #logo {
   margin-left: 200px;
   font-size: 1.5rem;
@@ -149,11 +149,12 @@ a:hover {
   height: 40px;
   width: 65%;
 }
+}
 /* 
 -------------------------------- */
 @media (max-width: 600px) {
   #logo img{
-    max-width: 80%;
+    max-width: 60%;
   }
   #menu {
     display: block;
