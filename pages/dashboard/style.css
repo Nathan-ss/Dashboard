@@ -149,6 +149,79 @@ a:hover {
   height: 40px;
   width: 65%;
 }
+.container-cards{
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row; 
+  width: 100%;
+}
+#card {
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 2%;
+  height: 300px;
+  background-color: #ffffff;
+  
+
+}
+#card img {
+  margin: 20px;
+  max-width: 40%;
+
+}
+#card .card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+}
+#card .card-body h1{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #9600a7;
+}
+#card .subcard{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 40px;
+  top: 0;
+  
+}
+
+#card:hover .subcard{
+  background-color: #810090;
+  display: block;
+  width: 198px;
+  height: 260px;
+}
+
+#card:hover.animar .subcard{
+  animation-name: slide;
+  animation-duration: 0.5s;
+
+
+}
+@keyframes slide {
+  from{
+    opacity: 0;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 }
 /* 
 -------------------------------- */
