@@ -31,22 +31,24 @@
     <title>Login</title>
 </head>
 <body>
+    <div class="data"> usuario:user senha:123456  </div>
     <div class="container">
     <div class="block">
         <div class="square-purple">
             <img src="assets/images/logo-top.png">
         </div>
         <div class="container-form">
+            
             <img src="assets/images/logo-nome.png">
-            <form action="">
-                <input type="text" placeholder="Login"><br>
-                <input type="password" placeholder="Senha">
+            <form id="form"  onsubmit="return enviar();">
+                <input type="text" id="user" placeholder="Login"><br>
+                <input type="password" id="password" placeholder="Senha">
                 <div class="submits">
-                    <a href="pages/dashboard/" class="btn">  enviar </a> 
+                    <a type="submit"  class="btn">  enviar </a> 
                     <a href = "pages/dashboard/" class="link">Esqueceu a senha?</a>
                     
                 </div>
-
+                <script src="js/validation.js"></script>
             </form>
 
         </div>
